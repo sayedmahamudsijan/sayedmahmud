@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sayed Mahmud - Portfolio</title>
+  <title>Sayed Mahmud | QA Engineer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -16,8 +16,6 @@
       <ul class="nav-links">
         <li><a href="#about">About Me</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -25,107 +23,82 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to My Portfolio 🚀</h1>
+    <p>QA Engineer | Researcher | Innovator</p>
+    <button onclick="window.location.href='#contact'">Contact Me</button>
+  </section>
+
   <!-- About Me Section -->
-  <section id="about">
-    <h1>About Me</h1>
+  <section class="content-section" id="about">
+    <h2>About Me</h2>
     <p>
-      Hi, I'm Sayed Mahmud, a passionate SQA Engineer with expertise in software testing methodologies, research, and electronic design. I bring strong problem-solving and technical expertise in areas like MATLAB, CST STUDIO, Proteus,
-      and digital design principles. Currently, I work as a SQA Engineer Intern and continue to develop my technical skills further.
+      I am a QA Engineer with experience in manual testing, functional testing using JIRA, and API testing with POSTMAN.
+      I hold a degree in Electronic & Telecommunication Engineering and have a strong research background in metamaterials.
     </p>
   </section>
 
   <!-- Experience Section -->
-  <section id="experience">
-    <h1>Experience</h1>
-    <ul>
-      <li>
-        <strong>QA Engineer Intern</strong> | A1QA Software Testing Company | <em>Jan 2024 – June 2024</em>
-        <p>
-          Executed manual test cases and documented results to ensure software functionality and usability. Conducted functional, regression, and smoke testing using JIRA for bug tracking and Postman for API testing.
-        </p>
-      </li>
-      <li>
-        <strong>Teaching Assistant</strong> | International Islamic University Chittagong | <em>Nov 2022 – Nov 2023</em>
-        <p>
-          Conducted lab sessions for courses like VLSI System Design, Analog Circuit, and Design of Electronic Systems. Supported student learning through mentoring and technical assistance.
-        </p>
-      </li>
-      <li>
-        <strong>Secretary</strong> | IIUC Telecom Club | <em>Nov 2022 – Nov 2023</em>
-        <p>
-          Organized technical workshops and events to promote electronics and telecommunication innovation. Led student engagement initiatives and administrative coordination for the club.
-        </p>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education">
-    <h1>Education</h1>
-    <ul>
-      <li>
-        <strong>B.Sc. in Electronic and Telecommunication Engineering</strong> | International Islamic University Chittagong
-        | <em>Nov 2019 – Feb 2024</em>
-      </li>
-      <li>
-        Completed a course on <strong>Meta-material Absorber and Paper Writing</strong> | IIUC Research Society | <em>2023</em>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <h1>Skills</h1>
-    <ul>
-      <li>JIRA, TestRail, Postman</li>
-      <li>MATLAB, CST Studio, Proteus</li>
-      <li>SQL, NoSQL (MongoDB), HTML, Linux (Shell)</li>
-      <li>Digital Logic Design, VLSI, HDL, and Device Physics</li>
-    </ul>
+  <section class="content-section" id="experience">
+    <h2>Experience</h2>
+    <div class="experience-container">
+      <div class="experience-card">
+        <h3>QA Engineer Intern</h3>
+        <p><strong>A1QA Software Testing Company</strong></p>
+        <p>Jan 2024 - June 2024 | Remote</p>
+        <ul>
+          <li>Executed manual test cases and documented results.</li>
+          <li>Performed regression and smoke testing using JIRA and POSTMAN.</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <h3>Teaching Assistant</h3>
+        <p><strong>International Islamic University Chittagong</strong></p>
+        <p>Nov 2022 - Nov 2023</p>
+        <ul>
+          <li>Conducted lab sessions for courses like VLSI Systems and Analog Circuits.</li>
+          <li>Assisted students in technical projects and mentoring.</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <!-- Publications Section -->
-  <section id="publications">
-    <h1>Publications</h1>
-    <ul>
+  <section class="content-section" id="publications">
+    <h2>Publications 📚</h2>
+    <ul class="publication-list">
       <li>
-        <a href="https://www.sciencedirect.com/science/article/pii/S2405844024161336" target="_blank">
-          Polarization-Selective Metamaterial Absorber Using Tailored Y-Shaped SRR for UWB Device and Doppler Navi-
-          gation Aids Applications - Heliyon Journal (Nov 2024)
-        </a>
+        <a href="https://www.heliyon.com/article/example-link" target="_blank">Polarization-Selective Metamaterial Absorber Using Tailored Y-Shaped SRR for UWB Device and Doppler Navigation Aids Applications</a>
       </li>
       <li>
-        <a href="https://ieeexplore.ieee.org/document/10491066" target="_blank">
-          Eye-Shaped Labyrinth Metamaterial Absorber For C, X, Ku & K-Band Applications - IEEE International
-          Conference on Telecommunications and Photonics (ICTP) (Dec 2023)
-        </a>
+        <a href="https://ieeexplore.ieee.org/document/example-link" target="_blank">Eye-Shaped Labyrinth Metamaterial Absorber For C, X, Ku & K-Band Applications</a>
       </li>
     </ul>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
-    <h1>Projects</h1>
+  <section class="content-section" id="projects">
+    <h2>Projects 💡</h2>
     <div class="project-container">
-      <div class="project-card">Sustainable Living Tech (2023)</div>
-      <div class="project-card">Daylight-Dependent Streetlight (2022)</div>
+      <div class="project-card">Sustainable Living Tech - Daylight Streetlight</div>
+      <div class="project-card">Personal Projects (Tech & Innovation)</div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <h1>Contact Me</h1>
-    <p>Email: <a href="mailto:sayedmahamudsijann@gmail.com">sayedmahamudsijann@gmail.com</a></p>
-    <p>Phone: <a href="tel:+8801875806948">+880 1875806948</a></p>
-    <p>Location: Mazar Road, Mirpur 1, Dhaka, 4750, Bangladesh</p>
+  <section class="content-section" id="contact">
+    <h2>Contact Me 📧</h2>
+    <p>Email: sayedmahamudsijann@gmail.com</p>
+    <p>Phone: +8801875806948</p>
+    <p>Location: Mazar Road, Mirpur 1, Dhaka</p>
   </section>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Sayed Mahmud. All Rights Reserved.</p>
+    <p>&copy; 2024 Sayed Mahmud | All Rights Reserved</p>
   </footer>
 
-  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 
