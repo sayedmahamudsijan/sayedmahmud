@@ -46,3 +46,15 @@ document.addEventListener("DOMContentLoaded", function () {
     return rect.top >= 0 && rect.bottom <= window.innerHeight;
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetSection = document.querySelector(link.getAttribute("href"));
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+});
+
