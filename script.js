@@ -57,4 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  // Preloader
+  const preloader = document.querySelector(".preloader");
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 1500);
+});
 
