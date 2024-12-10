@@ -9,15 +9,20 @@
 </head>
 
 <body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
+
   <!-- Header Section -->
   <header>
+    <div class="logo">Sayed Mahmud</div>
     <nav>
-      <div class="logo">Sayed Mahmud</div>
+      <div class="nav-toggle">☰</div>
       <ul class="nav-links">
         <li><a href="#about">About Me</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -39,17 +44,48 @@
     </p>
   </section>
 
+  <!-- Skills Section with Animated Loading Bars -->
+  <section class="content-section" id="skills">
+    <h2>Skills 🛠️</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <span>JIRA</span>
+        <div class="skill-bar">
+          <div class="loading" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>POSTMAN</span>
+        <div class="skill-bar">
+          <div class="loading" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>MATLAB</span>
+        <div class="skill-bar">
+          <div class="loading" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>CST Simulation</span>
+        <div class="skill-bar">
+          <div class="loading" style="width: 75%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Experience Section -->
   <section class="content-section" id="experience">
-    <h2>Experience</h2>
+    <h2>Experience 💼</h2>
     <div class="experience-container">
       <div class="experience-card">
         <h3>QA Engineer Intern</h3>
         <p><strong>A1QA Software Testing Company</strong></p>
         <p>Jan 2024 - June 2024 | Remote</p>
         <ul>
-          <li>Executed manual test cases and documented results.</li>
-          <li>Performed regression and smoke testing using JIRA and POSTMAN.</li>
+          <li>Executed test cases with JIRA and POSTMAN</li>
+          <li>Performed regression and functional testing</li>
         </ul>
       </div>
       <div class="experience-card">
@@ -57,44 +93,22 @@
         <p><strong>International Islamic University Chittagong</strong></p>
         <p>Nov 2022 - Nov 2023</p>
         <ul>
-          <li>Conducted lab sessions for courses like VLSI Systems and Analog Circuits.</li>
-          <li>Assisted students in technical projects and mentoring.</li>
+          <li>Guided students with practical lab sessions.</li>
+          <li>Reviewed coursework and mentored students in technical projects.</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Publications Section -->
-  <section class="content-section" id="publications">
-    <h2>Publications 📚</h2>
-    <ul class="publication-list">
-      <li>
-        <a href="https://www.heliyon.com/article/example-link" target="_blank">Polarization-Selective Metamaterial Absorber Using Tailored Y-Shaped SRR for UWB Device and Doppler Navigation Aids Applications</a>
-      </li>
-      <li>
-        <a href="https://ieeexplore.ieee.org/document/example-link" target="_blank">Eye-Shaped Labyrinth Metamaterial Absorber For C, X, Ku & K-Band Applications</a>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="content-section" id="projects">
-    <h2>Projects 💡</h2>
-    <div class="project-container">
-      <div class="project-card">Sustainable Living Tech - Daylight Streetlight</div>
-      <div class="project-card">Personal Projects (Tech & Innovation)</div>
-    </div>
-  </section>
-
   <!-- Contact Section -->
   <section class="content-section" id="contact">
-    <h2>Contact Me 📧</h2>
+    <h2>Contact Me ✉️</h2>
     <p>Email: sayedmahamudsijann@gmail.com</p>
     <p>Phone: +8801875806948</p>
     <p>Location: Mazar Road, Mirpur 1, Dhaka</p>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer>
     <p>&copy; 2024 Sayed Mahmud | All Rights Reserved</p>
   </footer>
