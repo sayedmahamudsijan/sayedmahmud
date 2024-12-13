@@ -1,53 +1,67 @@
-// Smooth Scrolling
+"""
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// Sticky Navigation
 
-    anchor.addEventListener('click', function(e) {
+window.addEventListener('scroll', () => {
 
-        e.preventDefault();
+    const header = document.querySelector('header');
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-
-            behavior: 'smooth'
-
-        });
-
-    });
+    header.classList.toggle('sticky', window.scrollY > 50);
 
 });
 
 
 
-// Light/Dark Mode Toggle
+// Scroll Animations
 
-const toggleButton = document.createElement('button');
+const sections = document.querySelectorAll('section');
 
-toggleButton.textContent = 'Toggle Light/Dark Mode';
+const options = {
 
-toggleButton.style.position = 'fixed';
+    threshold: 0.1
 
-toggleButton.style.bottom = '10px';
+};
 
-toggleButton.style.right = '10px';
+const observer = new IntersectionObserver((entries) => {
 
-toggleButton.style.padding = '10px';
+    entries.forEach(entry => {
 
-toggleButton.style.background = '#1abc9c';
+        if (entry.isIntersecting) {
 
-toggleButton.style.color = '#fff';
+            entry.target.classList.add('show');
 
-toggleButton.style.border = 'none';
+        } else {
 
-toggleButton.style.borderRadius = '5px';
+            entry.target.classList.remove('show');
 
-toggleButton.style.cursor = 'pointer';
+        }
 
-document.body.appendChild(toggleButton);
+    });
+
+}, options);
+
+
+
+sections.forEach(section => {
+
+    observer.observe(section);
+
+});
+
+
+
+// Responsive Menu Toggle
+
+const toggleButton = document.querySelector('.menu-toggle');
+
+const navLinks = document.querySelector('header nav');
 
 
 
 toggleButton.addEventListener('click', () => {
 
-    document.body.classList.toggle('dark-mode');
+    navLinks.classList.toggle('active');
 
 });
+
+"""
